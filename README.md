@@ -12,9 +12,18 @@ Prototypes for the Registered Plans COP
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/withdrawing-from-a-tfsa.html">Withdrawing from a TFSA</a></p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/requesting-a-tfsa-transfer.html">Requesting a TFSA Transfer</a></p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa.html">Owing tax on a TFSA</a></p>
+<p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-to-pay-tax-on-a-tfsa.html">If you have to pay tax on a TFSA</a></p>
+<p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-excess-contributions.html">If you have excess contributions</a></p>
+<p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-non-resident-contributions.html">If you have non-resident contributions</a></p>
 
+<div class="col-lg-4 col-md-6"><h3><a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-non-permitted-investments.html">If you have non-permitted investments</a></h3>
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+</div>
 
 <p>Supporting you through life transitions</p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-tfsa-holder-dies.html">If the TFSA holder dies</a></p>
+<p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-tfsa-holder-dies/what-happens-when-a-tfsa-holder-dies.html">What happens when a TFSA holder dies</a></p>
+<p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-tfsa-holder-dies/if-you-are-a-successor-holder-of-a-tfsa.html">If you are a successor holder of a TFSA</a></p>
+<p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-tfsa-holder-dies/if-you-are-a-beneficiary-of-a-tfsa.html">If you are a beneficiary of a TFSA</a></p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-you-become-non-resident.html">If you become a non-resident</a></p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/#">If you divorce or separate</a></p>
