@@ -16,5 +16,5 @@ Prototypes for the Registered Plans COP
 
 <p>Supporting you through life transitions</p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-tfsa-holder-dies.html">If the TFSA holder dies</a></p>
-<p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-you-become-non-resident.html">If you become a non-resident.html</a></p>
+<p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-you-become-non-resident.html">If you become a non-resident</a></p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/#">If you divorce or separate</a></p>
