@@ -15,10 +15,7 @@ Prototypes for the Registered Plans COP
 <p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-to-pay-tax-on-a-tfsa.html">If you have to pay tax on a TFSA</a></p>
 <p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-excess-contributions.html">If you have excess contributions</a></p>
 <p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-non-resident-contributions.html">If you have non-resident contributions</a></p>
-
-<div class="col-lg-4 col-md-6"><h3><a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-non-permitted-investments.html">If you have non-permitted investments</a></h3>
-<p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-</div>
+<p> - - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax-on-a-tfsa/if-you-have-non-permitted-investments.html">If you have non-permitted investments</a></p>
 
 <p>Supporting you through life transitions</p>
 <p> - <a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/if-tfsa-holder-dies.html">If the TFSA holder dies</a></p>
