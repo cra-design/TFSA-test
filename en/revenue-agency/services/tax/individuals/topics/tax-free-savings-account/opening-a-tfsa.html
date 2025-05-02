@@ -132,9 +132,11 @@ config:
 ---
 flowchart LR
     A(["Open a TFSA"]) --> B["Want to Contribute"]
-    B --> C{"Do you have room?"} & F["Wait until next calendar year"]
-    C --> D["Want to Contribute"] & F
+    B --> C{"Do you have room?"}
+    C --> D["Want to Contribute"]
     D --> E["Withdraw (when you want to)"]
+    C --> F["Wait until next calendar year"]
+    D --> F
 </pre>
 <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
