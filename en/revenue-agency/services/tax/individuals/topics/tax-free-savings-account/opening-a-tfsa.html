@@ -134,7 +134,7 @@
      <li>Re-contribute to your TFSA when you have enough available contribution room again</li>
     </ol>                           
 <!-- Just using Mermaid for prototyping since it's easier to make changes. If we decide to use an image it will be done using an appropriate format -->                            
-<pre class="mermaid">
+<!--pre class="mermaid">
 ---
 config:
   layout: fixed
@@ -142,13 +142,13 @@ config:
 flowchart LR
     accTitle: TFSA flowchart
     accDescr: Description of TFSA flowchart
-    A(["Open a TFSA"]) --> B["Want to Contribute"]
-    B --> C{"Do you have room?"}
-    C --> D["Want to Contribute"]
-    D --> E["Withdraw (when you want to)"]
-    B --> F["Wait until next calendar year"]
-    C --> F
-</pre>
+    A(["Open a TFSA"]) -- B["Want to Contribute"]
+    B -- C{"Do you have room?"}
+    C -- D["Want to Contribute"]
+    D -- E["Withdraw (when you want to)"]
+    B -- F["Wait until next calendar year"]
+    C -- F
+</pre-->
 <!--script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
 </script-->
