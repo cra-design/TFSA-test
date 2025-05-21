@@ -83,6 +83,75 @@
                 }]
             });
         </script>
+        <style>
+    
+
+    
+/* Take out bg override before submitting to experimental */
+    .bg-light {background-color: #f5f5f5;}
+    
+    
+    .math-grid {
+  display: table;
+  border-collapse: collapse; /* optional for tighter layout */
+
+}
+    .math-grid.p-0 .math-grid-cell, .math-grid-row.p-0 .math-grid-cell, .math- {
+        padding: 0px;
+        line-height: 1.2em;
+    }
+.math-grid-row {
+  display: table-row;
+}
+
+    
+    
+.math-grid-cell {
+  display: table-cell;
+ padding: 0px 3px 0px 3px;
+}
+.math-grid-cell:before {content: " ";}
+    
+    .math-grid-cell.pl-0 {
+        padding-left: 0px;
+    }    
+    .math-grid-cell.pr-0 {padding-right: 0px;}
+    
+    .math-grid-scroll {
+        overflow-x: auto;
+    }  
+    
+@media screen and (max-width: 767px) {
+    
+.math-grid-scroll {
+    width: 100%;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}    
+    }
+ .math-grid .math-grid-cell.strng-brdr-tp,  .math-grid .math-grid-row.strng-brdr-tp .math-grid-cell {
+     border-top: 3px solid #333;
+     
+    }  
+.math-grid .math-grid-cell.strng-brdr-bttm, .math-grid-row.strng-brdr-bttm .math-grid-cell {
+     border-bottom: 3px solid #333;
+
+    }  
+  .math-grid .math-grid-cell.strng-brdr-lft {
+     border-left: 3px solid #333;
+     
+    }  
+.math-grid .math-grid-cell.strng-brdr-rght {
+     border-right: 3px solid #333;
+
+    }     
+.math-grid .math-grid-cell.strng-brdr-otln {
+     border: 3px solid #333;
+
+    }     
+    
+
+  </style>
         <!-- Write closure template -->
         <div class="container">
             <div class="row">
@@ -96,16 +165,199 @@
 
 <h2 class="h3">On this page</h2>
 <ul>
-    <li><a href="#toc1">What is contribution room</a></li>
-    <li><a href="#toc2">Determine your available contribution room</a></li>
+    <li><a href="#toc1">Calculate your room before you contribute</a></li>
+    <li><a href="#toc2">How to calculate your room</a></li>
 </ul>
                             
 <h2 id="toc1">Calculate your room before you contribute</h2>
-<p>page content</p>
+<p>The most reliable way to know how much you can contribute to your TFSA is to calculate how much available contribution room you have.</p>
+
+<p>Since your available room can change when you contribute or withdraw funds, it’s necessary to check exactly how much room you have available before you make a new contribution. </p>
+
+<detail>
+<summary>How contribution room changes</summary>
+
+<p>When you contribute to your TFSA, it immediately counts against your available contribution room. It will immediately reduce your available room by the same amount that you contributed.  </p>
+
+<p>When you withdraw from your TFSA, it counts towards next year’s available contribution room. It will increase your contribution room on January 1 of the next year by the same amount that you withdrew.  The annual dollar limit will also be added to your available room at the start of the new year. </p>
+
+<p>Since new contribution room only becomes available in the next year, you must be careful not to re-contribute a withdrawal in the same year unless you know you have the available room. </p>
+
+</detail>
+
+ 
+
+<p>If you contribute more than your available room, you may be taxed on the excess amount.  </p>
+
+<p>For more information:  </p>
+<ul>
+    <li><a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing-to-a-tfsa/before-you-contribute.html#toc1">Understand contribution room </li>
+    <li><a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing-to-a-tfsa/what-to-do-if-you-contribute-too-much.html">If you over-contribute </li>
+</ul>
+ 
+
+<h3>Your own records are the most complete</h3>
+
+<p>We recommend that you calculate your available contribution room using your own records.  Neither your financial institution nor the CRA necessarily has your complete TFSA information. </p>
+
+<p>Your financial institution may provide you with a report, but this will not be complete if you hold TFSAs with multiple issuers.  The CRA’s information comes from records sent by TFSA issuers, but this is only updated once per year, usually in late February.  </p>
+
+<p>Your own records will provide the most complete calculation of your available room. </p>
+
+ 
+
+<h3>When your TFSA information is updated at the CRA </h3>
+
+<p>Your TFSA information in My account is updated annually after we receive a report from your financial institution.  By the last day in February, they must submit a transaction summary listing your TFSA contributions, <p>transfers and withdrawals of the previous calendar year. </p>
+
+ 
+
+<p>If you disagree with any of the information CRA has on file, including dates or amounts of contributions or withdrawals which your TFSA issuer has provided to us, contact your TFSA issuer. </p> 
+
+ 
+
+<p>If any information provided by the issuer about your account is incorrect, the issuer must send us an amended report so that we can update our records.</p> 
+
+ 
+<details>
+<summary>Common mistake to avoid: checking My account early in the year</summary>
+
+<p>Moira, a resident of Canada, turns 18 in August 2020.  </p>
+
+<p>In July 2021, she opens a TFSA and contributes $12,000, which is the maximum she was allowed to contribute based on the annual TFSA dollar limit for 2020 ($6,000) and 2021 ($6,000). </p>
+
+<p>The new annual limit for 2022 is $6,000 and is included in Moira’s CRA account on January 1.  </p>
+
+<p>Moira checks her CRA account that day to confirm her TFSA contribution room, and the amount displayed is $18,000.  </p>
+
+<p>In February 2022, Moira makes a $10,000 contribution, which puts her $4,000 in excess and subject to the excess tax. </p>
+
+<p>Moira did not realize that the TFSA contribution room in her CRA account did not reflect all the previous year’s transactions when she accessed it on January 1. This is because her financial institution had not yet submitted information about her transactions at that time.  </p>
+
+<p>Financial institutions have until the end of February to send information about the previous year’s transactions. Moira should have compared her transaction history from her financial institution with the transaction summary in her CRA account to verify her available contribution room. </p>
+
+</details>
                             
-<h2 id="toc2">How to calculate your contribution room</h2>
-<p>page content</p>
-                            
+<h2 id="toc2">How to calculate your room</h2>
+<p>Your TFSA contribution room is the total of the following: </p>
+
+<div class="math-grid">
+        <div class="math-grid-row">
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell text-right"></div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">The TFSA dollar limit of the current year </div>
+        </div>
+        <div class="math-grid-row">
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell text-right"></div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell"></div>
+        </div>
+        <div class="math-grid-row">
+          <div class="math-grid-cell">&plus;</div>
+          <div class="math-grid-cell text-right"></div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">Any withdrawals made from the TFSA in the previous year</div>
+        </div>
+        <div class="math-grid-row">
+          <div class="math-grid-cell">=</div>
+          <div class="math-grid-cell text-right"></div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">Your available contribution room</div>
+        </div>
+</div>
+
+<p>Qualifying transfers, exempt contributions and specified distributions have no effect on your available contribution room. </p>
+ 
+<details>
+<summary>Example of how to calculate contribution room</summary>
+
+<p>From 2014 until the end of 2023, Alex contributed the maximum TFSA dollar limit each year. As a result, their unused TFSA contribution room at the end of 2023 was zero.</p>
+
+<p>Alex’s TFSA contribution room at the beginning of 2024 was $7,000 (the 2024 TFSA dollar limit). </p>
+
+<p>On June 15, 2024, they contributed of $1,000.  </p>
+
+<p>On October 26, 2024, they withdrew $4,000. </p>
+
+<p>Alex’s unused TFSA contribution room at the end of 2024 was $6,000 ($7,000 – $1,000). </p>
+
+<p>Alex calculated his their TFSA contribution room for the beginning of 2025 as follows: </p>
+
+<div class="math-grid">
+        <div class="math-grid-row">
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell text-right">$7,000</div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">TFSA contribution room at the beginning of 2024</div>
+        </div>
+        <div class="math-grid-row">
+          <div class="math-grid-cell">&minus;</div>
+          <div class="math-grid-cell text-right">$1,000</div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">Contributions made in 2024</div>
+        </div>
+        <div class="math-grid-row">
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell text-right">$6,000</div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">Unused TFSA contribution room at the end of 2024</div>
+        </div>
+        <div class="math-grid-row">
+          <div class="math-grid-cell">&plus;</div>
+          <div class="math-grid-cell text-right">$4,000</div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">Total withdrawals made in 2024</div>
+        </div>      
+        <div class="math-grid-row">
+          <div class="math-grid-cell">&plus;</div>
+          <div class="math-grid-cell text-right">$7,000</div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">2025 TFSA dollar limit</div>
+        </div>             
+        <div class="math-grid-row">
+          <div class="math-grid-cell">=</div>
+          <div class="math-grid-cell text-right strng-brdr-tp">$17,000</div>          
+          <div class="math-grid-cell"></div>
+          <div class="math-grid-cell">TFSA contribution room at the beginning of 2025</div>
+        </div>
+</div>  
+
+</details>      
+
+<h3>Use the CRA worksheet or calculator</h3>
+
+<p>To calculate your available contribution room for the current year, we recommend you either</p>
+
+<ul class="list-unstyled cnjnctn-type-or cnjnctn-xs">
+      <li class="cnjnctn-col">
+    <h4 class="mrgn-tp-sm text-muted">Use the PDF worksheet<span class="wb-inv">: Option 1</span></h4>
+        <p>Fill out the TFSA contribution room worksheet (fillable or printable)<br>
+        <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/rc343.html">Form RC343, Worksheet - TFSA Contribution room</a></p>
+      </li>
+      <li class="cnjnctn-col">
+    <h4 class="mrgn-tp-sm text-muted">Use the My Account calculator <span class="wb-inv">: Option 2</span></h4>
+        <p>Sign in to My Account and use the contribution room calculator</p>
+        <ol>
+            <li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html">Sign in to your CRA account</a></li>
+            <li>Select <strong>Savings and pensions</strong></li>
+            <li>Select <strong>Contribution room</strong></li>
+            <li>Select <strong>Calculate your TFSA contribution room using your own records</strong></li>
+            <li>Select the button <strong>Do your own calculation</strong></li>
+        </ol>
+      </li>
+</ul>
+
+<h2 class="h3">Related information</h2>
+<ul>
+    <li><a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/rc343.html">Worksheet – TFSA contribution room (Form RC343)</a></li>
+    <li><a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing-to-a-tfsa/before-you-contribute.html">Before you contribute to a TFSA</a>/li>
+    <li><a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing-to-a-tfsa/how-to-contribute.html">How to contribute to a TFSA</a></li>
+    <li><a href="https://cra-design.github.io/TFSA-cop/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing-to-a-tfsa/what-to-do-if-you-contribute-too-much.html">If you over-contribute to a TFSA</a></li>
+</ul>
+
+
                             
                         </div>
 
