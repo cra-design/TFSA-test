@@ -83,73 +83,68 @@
                 }]
             });
         </script>
-        <style>
+       <style>
     
 
-    
-/* Take out bg override before submitting to experimental */
-    .bg-light {background-color: #f5f5f5;}
-    
-    
-    .math-grid {
+
+  .wb-math-grid {
+  border-collapse: collapse;
   display: table;
-  border-collapse: collapse; /* optional for tighter layout */
-
+  position: relative;
 }
-    .math-grid.p-0 .math-grid-cell, .math-grid-row.p-0 .math-grid-cell, .math- {
-        padding: 0px;
-        line-height: 1.2em;
-    }
-.math-grid-row {
+.wb-math-grid.mg-spcd div.mg-cell, div.mg-row.mg-spcd div.mg-cell {
+  padding: 5px 3px 5px 3px;
+}
+.wb-math-grid.p-0 div.mg-cell, div.mg-row.p-0 div.mg-cell {
+  line-height: 1.2em;
+  padding: 0px;
+}
+div.mg-row {
   display: table-row;
 }
-
-    
-    
-.math-grid-cell {
+div.mg-cell {
   display: table-cell;
- padding: 0px 3px 0px 3px;
+  padding: 0px 3px 0px 3px;
 }
-.math-grid-cell:before {content: " ";}
-    
-    .math-grid-cell.pl-0 {
-        padding-left: 0px;
-    }    
-    .math-grid-cell.pr-0 {padding-right: 0px;}
-    
-    .math-grid-scroll {
-        overflow-x: auto;
-    }  
-    
+div.mg-cell:before {
+  content: " ";
+}
+div.mg-cell.pl-0 {
+  padding-left: 0px;
+}
+div.mg-cell.pr-0 {
+  padding-right: 0px;
+}
+.mg-scroll {
+  overflow-x: auto;
+  padding: 5px 5px 5px 0px;
+}
 @media screen and (max-width: 767px) {
-    
-.math-grid-scroll {
-    width: 100%;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+  .mg-scroll {
     border: 1px solid #ddd;
-}    
-    }
- .math-grid .math-grid-cell.strng-brdr-tp,  .math-grid .math-grid-row.strng-brdr-tp .math-grid-cell {
-     border-top: 3px solid #333;
-     
-    }  
-.math-grid .math-grid-cell.strng-brdr-bttm, .math-grid-row.strng-brdr-bttm .math-grid-cell {
-     border-bottom: 3px solid #333;
-
-    }  
-  .math-grid .math-grid-cell.strng-brdr-lft {
-     border-left: 3px solid #333;
-     
-    }  
-.math-grid .math-grid-cell.strng-brdr-rght {
-     border-right: 3px solid #333;
-
-    }     
-.math-grid .math-grid-cell.strng-brdr-otln {
-     border: 3px solid #333;
-
-    }     
-    
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+.wb-math-grid div.mg-cell.mg-brdr-tp, .wb-math-grid div.mg-row.mg-brdr-tp div.mg-cell {
+  border-top: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-bttm, div.mg-row.mg-brdr-bttm div.mg-cell {
+  border-bottom: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-lft {
+  border-left: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-rght {
+  border-right: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-otln {
+  border: 3px solid #333;
+}
+/* hides anything not assigned to the cell */
+.mg-row > :not(.mg-cell) {
+  display: none;
+}
 
   </style>
         <!-- Write closure template -->
@@ -241,30 +236,30 @@
 <h2 id="toc2">How to calculate your room</h2>
 <p>Your TFSA contribution room is the total of the following: </p>
 
-<div class="math-grid">
-        <div class="math-grid-row">
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell text-right"></div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">The TFSA dollar limit of the current year </div>
+<div class="wb-math-grid">
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right"></div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">The TFSA dollar limit of the current year </div>
         </div>
-        <div class="math-grid-row">
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell text-right"></div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell"></div>
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right"></div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell"></div>
         </div>
-        <div class="math-grid-row">
-          <div class="math-grid-cell h4">&plus;</div>
-          <div class="math-grid-cell text-right"></div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell mg-brdr-bttm">Any unused contribution room from previous years</div>
+        <div class="mg-row">
+          <div class="mg-cell h4">&plus;</div>
+          <div class="mg-cell text-right"></div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Any unused contribution room from previous years</div>
         </div>
-        <div class="math-grid-row">
-          <div class="math-grid-cell h4">=</div>
-          <div class="math-grid-cell text-right"></div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">Your available contribution room</div>
+        <div class="mg-row">
+          <div class="mg-cell h4">=</div>
+          <div class="mg-cell text-right"></div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell mg-brdr-tp">Your available contribution room</div>
         </div>
 </div>
 
@@ -286,41 +281,41 @@
 <p>Alex calculated his their TFSA contribution room for the beginning of 2025 as follows: </p>
 
 <div class="math-grid">
-        <div class="math-grid-row">
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell text-right">$7,000</div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">TFSA contribution room at the beginning of 2024</div>
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right">$7,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">TFSA contribution room at the beginning of 2024</div>
         </div>
-        <div class="math-grid-row">
-          <div class="math-grid-cell">&minus;</div>
-          <div class="math-grid-cell text-right">$1,000</div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">Contributions made in 2024</div>
+        <div class="mg-row">
+          <div class="mg-cell">&minus;</div>
+          <div class="mg-cell text-right">$1,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Contributions made in 2024</div>
         </div>
-        <div class="math-grid-row">
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell text-right">$6,000</div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">Unused TFSA contribution room at the end of 2024</div>
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right">$6,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Unused TFSA contribution room at the end of 2024</div>
         </div>
-        <div class="math-grid-row">
-          <div class="math-grid-cell">&plus;</div>
-          <div class="math-grid-cell text-right">$4,000</div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">Total withdrawals made in 2024</div>
+        <div class="mg-row">
+          <div class="mg-cell">&plus;</div>
+          <div class="mg-cell text-right">$4,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Total withdrawals made in 2024</div>
         </div>      
-        <div class="math-grid-row">
-          <div class="math-grid-cell">&plus;</div>
-          <div class="math-grid-cell text-right">$7,000</div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">2025 TFSA dollar limit</div>
+        <div class="mg-row">
+          <div class="mg-cell">&plus;</div>
+          <div class="mg-cell text-right">$7,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">2025 TFSA dollar limit</div>
         </div>             
-        <div class="math-grid-row">
-          <div class="math-grid-cell">=</div>
-          <div class="math-grid-cell text-right strng-brdr-tp">$17,000</div>          
-          <div class="math-grid-cell"></div>
-          <div class="math-grid-cell">TFSA contribution room at the beginning of 2025</div>
+        <div class="mg-row">
+          <div class="mg-cell">=</div>
+          <div class="mg-cell text-right strng-brdr-tp">$17,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">TFSA contribution room at the beginning of 2025</div>
         </div>
 </div>  
 
