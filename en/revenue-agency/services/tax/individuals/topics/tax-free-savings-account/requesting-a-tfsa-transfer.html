@@ -79,6 +79,70 @@
                 }]
             });
         </script>
+        <style>
+    
+
+
+  .wb-math-grid {
+  border-collapse: collapse;
+  display: table;
+  position: relative;
+}
+.wb-math-grid.mg-spcd div.mg-cell, div.mg-row.mg-spcd div.mg-cell {
+  padding: 5px 3px 5px 3px;
+}
+.wb-math-grid.p-0 div.mg-cell, div.mg-row.p-0 div.mg-cell {
+  line-height: 1.2em;
+  padding: 0px;
+}
+div.mg-row {
+  display: table-row;
+}
+div.mg-cell {
+  display: table-cell;
+  padding: 0px 3px 0px 3px;
+}
+div.mg-cell:before {
+  content: " ";
+}
+div.mg-cell.pl-0 {
+  padding-left: 0px;
+}
+div.mg-cell.pr-0 {
+  padding-right: 0px;
+}
+.mg-scroll {
+  overflow-x: auto;
+  padding: 5px 5px 5px 0px;
+}
+@media screen and (max-width: 767px) {
+  .mg-scroll {
+    border: 1px solid #ddd;
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+.wb-math-grid div.mg-cell.mg-brdr-tp, .wb-math-grid div.mg-row.mg-brdr-tp div.mg-cell {
+  border-top: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-bttm, div.mg-row.mg-brdr-bttm div.mg-cell {
+  border-bottom: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-lft {
+  border-left: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-rght {
+  border-right: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-otln {
+  border: 3px solid #333;
+}
+/* hides anything not assigned to the cell */
+.mg-row > :not(.mg-cell) {
+  display: none;
+}
+
+  </style>
         <!-- Write closure template -->
         <div class="container">
             <div class="row">
@@ -124,31 +188,90 @@
 
                             <p>When you contribute to your TFSA yourself, it is considered a new contribution. If you contribute more than your available contribution room allows, you will have an excess amount in your TFSA that will be subject to a monthly tax of 1%. </p>
                             
-                            <details>
-                            <summary>Example: How doing your own transfer can have tax consequences</summary>
+<details>
+<summary>Example: How doing your own transfer can have tax consequences</summary>
                           
-                            <p>Alexis is 43 years of age and a resident of Canada. In 2023, she opens a TFSA and contributes the maximum amount allowable for years 2009 to 2023. This is a total of $88,000.</p>
-                                <p>$88,000 Available conribution room (2009-2023 dollar limits)</p>
-                                <p>- $88,000 Contribution</p>
-                                <p>= $0 Available contribution room </p>
+<p>Alexis is 43 years of age and a resident of Canada. In 2023, she opens a TFSA and contributes the maximum amount allowable for years 2009 to 2023. This is a total of $88,000.</p>
 
-                            <p>In early 2024, Alexis contributes $7,000, the dollar limit for that year.</p>
-                                <p>$7,000 Available contribution room (2024 dollar limit)</p>
-                                <p>- $7,000 Conribution </p>
-                                <p>= $0 Available contribution room </p>
+<div class="wb-math-grid">
+    <div class="mg-row">
+      <div class="mg-cell"></div>
+      <div class="mg-cell h4 text-muted text-right">$88,000</div>
+      <div class="mg-cell">&nbsp;</div>
+      <div class="mg-cell">Available conribution room (2009-2023 dollar limits)</div>
+    </div>
+    <div class="mg-row">
+      <div class="mg-cell h4">&minus;</div>
+      <div class="mg-cell h4 text-muted text-right">$88,000</div>
+      <div class="mg-cell"></div>
+      <div class="mg-cell">Contribution</div>
+    </div>
+    <div class="mg-row">
+      <div class="mg-cell h4 mg-brdr-tp">=</div>
+      <div class="mg-cell h4 text-muted text-right mg-brdr-tp">$0</div>
+      <div class="mg-cell">&nbsp;</div>
+      <div class="mg-cell">Available contribution room</div>
+    </div>
+  </div>
+
+<p class="mrgn-tp-md">In early 2024, Alexis contributes $7,000, the dollar limit for that year.</p>
+
+<div class="wb-math-grid">
+    <div class="mg-row">
+      <div class="mg-cell"></div>
+      <div class="mg-cell h4 text-muted text-right">$7,000</div>
+      <div class="mg-cell">&nbsp;</div>
+      <div class="mg-cell">Available contribution room (2024 dollar limit)</div>
+    </div>
+    <div class="mg-row">
+      <div class="mg-cell h4">&minus;</div>
+      <div class="mg-cell h4 text-muted text-right">$7,000</div>
+      <div class="mg-cell"></div>
+      <div class="mg-cell">Contribution</div>
+    </div>
+    <div class="mg-row">
+      <div class="mg-cell h4 mg-brdr-tp">=</div>
+      <div class="mg-cell h4 text-muted text-right mg-brdr-tp">$0</div>
+      <div class="mg-cell">&nbsp;</div>
+      <div class="mg-cell">Available contribution room</div>
+    </div>
+  </div>
                                 
-                            <p>Then Alexis gets an offer for a better interest rate at a different financial institution. She decides to take advantage of the offer. In April 2024, she withdraws $50,000 from her TFSA and contributes it to a new TFSA. </p>
-                                <p>$0 Unused contribution room </p>
-                                <p>$50,000 Withdrawal (no effect on 2024 room)</p>
-                                <p>- $50,000 Conribution </p>
-                                <p>= $50,000 Over-contribution </p>
+<p class="mrgn-tp-md">Then Alexis gets an offer for a better interest rate at a different financial institution. She decides to take advantage of the offer. In April 2024, she withdraws $50,000 from her TFSA and contributes it to a new TFSA. </p>
 
-                            <p>Since Alexis withdrew and contributed the money to the new TFSA herself, the transaction is considered a new contribution. In this case, it is an over-contribution of $50,000.</p>
+<div class="wb-math-grid">
+    <div class="mg-row">
+      <div class="mg-cell"></div>
+      <div class="mg-cell h4 text-muted text-right">$0</div>
+      <div class="mg-cell">&nbsp;</div>
+      <div class="mg-cell">Unused contribution room</div>
+    </div>
+    <div class="mg-row">
+      <div class="mg-cell h4"></div>
+      <div class="mg-cell h4 text-muted text-right">$50,000</div>
+      <div class="mg-cell"></div>
+      <div class="mg-cell">Withdrawal (no effect on 2024 room)</div>
+    </div>
+    <div class="mg-row">
+      <div class="mg-cell h4">&minus;</div>
+      <div class="mg-cell h4 text-muted text-right">$50,000</div>
+      <div class="mg-cell"></div>
+      <div class="mg-cell">Contribution</div>
+    </div>
+    <div class="mg-row">
+      <div class="mg-cell h4 mg-brdr-tp">=</div>
+      <div class="mg-cell h4 text-muted text-right mg-brdr-tp">$50,000</div>
+      <div class="mg-cell">&nbsp;</div>
+      <div class="mg-cell">Over-contribution</div>
+    </div>
+  </div>
 
-                            <p>Because Alexis did not do a direct transfer through her financial institution, she will be assessed by the CRA and may have to pay a monthly 1% tax. This comes to $500 per month until she removes the excess amount. To avoid this situation, Alexis should have requested a direct transfer from her existing financial institution to her new one.</p>
+<p class="mrgn-tp-md">Since Alexis withdrew and contributed the money to the new TFSA herself, the transaction is considered a new contribution. In this case, it is an over-contribution of $50,000.</p>
 
-                            <p>The $50,000 of available contribution room caused by the withdrawal will not be added back to her TFSA until the <strong>next</strong> calendar year.</p>
-                            </details>
+<p>Because Alexis did not do a direct transfer through her financial institution, she will be assessed by the CRA and may have to pay a monthly 1% tax. This comes to $500 per month until she removes the excess amount. To avoid this situation, Alexis should have requested a direct transfer from her existing financial institution to her new one.</p>
+
+<p>The $50,000 of available contribution room caused by the withdrawal will not be added back to her TFSA until the <strong>next</strong> calendar year.</p>
+</details>
 
 <p>For more information:</p>  
 <ul>
