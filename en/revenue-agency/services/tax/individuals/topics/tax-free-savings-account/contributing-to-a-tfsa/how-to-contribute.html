@@ -82,6 +82,70 @@
                 }]
             });
         </script>
+        <style>
+    
+
+
+  .wb-math-grid {
+  border-collapse: collapse;
+  display: table;
+  position: relative;
+}
+.wb-math-grid.mg-spcd div.mg-cell, div.mg-row.mg-spcd div.mg-cell {
+  padding: 5px 3px 5px 3px;
+}
+.wb-math-grid.p-0 div.mg-cell, div.mg-row.p-0 div.mg-cell {
+  line-height: 1.2em;
+  padding: 0px;
+}
+div.mg-row {
+  display: table-row;
+}
+div.mg-cell {
+  display: table-cell;
+  padding: 0px 3px 0px 3px;
+}
+div.mg-cell:before {
+  content: " ";
+}
+div.mg-cell.pl-0 {
+  padding-left: 0px;
+}
+div.mg-cell.pr-0 {
+  padding-right: 0px;
+}
+.mg-scroll {
+  overflow-x: auto;
+  padding: 5px 5px 5px 0px;
+}
+@media screen and (max-width: 767px) {
+  .mg-scroll {
+    border: 1px solid #ddd;
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+.wb-math-grid div.mg-cell.mg-brdr-tp, .wb-math-grid div.mg-row.mg-brdr-tp div.mg-cell {
+  border-top: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-bttm, div.mg-row.mg-brdr-bttm div.mg-cell {
+  border-bottom: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-lft {
+  border-left: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-rght {
+  border-right: 3px solid #333;
+}
+.wb-math-grid div.mg-cell.mg-brdr-otln {
+  border: 3px solid #333;
+}
+/* hides anything not assigned to the cell */
+.mg-row > :not(.mg-cell) {
+  display: none;
+}
+
+  </style>
         <!-- Write closure template -->
         <div class="container">
             <div class="row">
@@ -149,29 +213,106 @@
 <p>On January 1, 2025, Taylor&rsquo;s available TFSA contribution room for the  year is $6,500.</p>
 
 <p>On January 10, 2025, she contributes $2,000. This contribution is  immediately applied against her available room, reducing it to $4,500. </p>
-    <p>$6,500 Available room  </p>
-    <p>- $2,000 Contribution </p>
-    <p>= $4,500 Available room after contribution </p>
+
+<div class="math-grid">
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right">$6,500</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Available room</div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4">&minus;</div>
+          <div class="mg-cell text-right">$2,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Contribution</div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4 mg-brdr-tp">=</div>
+          <div class="mg-cell text-right mg-brdr-tp">$4,500</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Available room after contribution</div>
+        </div>
+</div>  
     
-<p>On February 10, 2025, she withdraws $2,000. Her contribution room stays  at $4,500. (The $2,000 room will be added back next year.) </p>
+<p class="mrgn-tp-md">On February 10, 2025, she withdraws $2,000. Her contribution room stays  at $4,500. (The $2,000 room will be added back next year.) </p>
 <p>On March 10, 2025, she contributes $2,000. Her contribution room immediately  reduces to $2,500. </p>
    
-    <p>$4,500 Available room  </p>
-    <p>- $2,000 Contribution </p>
-    <p>= $2,500 Available room after contribution </p>
+<div class="math-grid">
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right">$4,500</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Available room</div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4">&minus;</div>
+          <div class="mg-cell text-right">$2,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Contribution</div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4 mg-brdr-tp">=</div>
+          <div class="mg-cell text-right mg-brdr-tp">$2,500</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Available room after contribution</div>
+        </div>
+</div>
     
-<p>On April 10, 2025, she withdraws $1,000. Her contribution room stays at $2,500. (The $1,000 room will be added back next year.) </p>
+<p class="mrgn-tp-md">On April 10, 2025, she withdraws $1,000. Her contribution room stays at $2,500. (The $1,000 room will be added back next year.) </p>
 <p>On Dec 31,2025, she contributes $6,500. But because she only has $2,500 room  available, she has over-contributed by $4,000.</p>
-       <p>$2,500 Available room  </p>
-    <p>- $6,500 Contribution </p>
-    <p>= $4,000 Over-contribution </p>
+
+<div class="math-grid">
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right">$2,500</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Available room</div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4">&minus;</div>
+          <div class="mg-cell text-right">$6,500</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Contribution</div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4 mg-brdr-tp">=</div>
+          <div class="mg-cell text-right mg-brdr-tp">$4,000</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell">Over-contribution</div>
+        </div>
+</div>
     
-<p>In 2025, her contributions added up as follows:
-    <p>$2000</p>
-     <p> + $2,000</p>
-      <p>+ $6500</p>
-     <p> =  $10,500.</p>
-<p>In this example, she over-contributed. She exceeded her $6,5000 available contribution room for 2025 by $4,000.</p>
+<p class="mrgn-tp-md">In 2025, her contributions added up as follows:
+
+<div class="math-grid">
+        <div class="mg-row">
+          <div class="mg-cell"></div>
+          <div class="mg-cell text-right">$2000</div>
+          <div class="mg-cell"></div>
+          <div class="mg-cell"></div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4">&plus;</div>
+          <div class="mg-cell text-right">$2,000</div>
+          <div class="mg-cell"></div>
+          <div class="mg-cell"></div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4">&plus;</div>
+          <div class="mg-cell text-right">$6500</div>          
+          <div class="mg-cell"></div>
+          <div class="mg-cell"></div>
+        </div>
+        <div class="mg-row">
+          <div class="mg-cell h4 mg-brdr-tp">=</div>
+          <div class="mg-cell text-right mg-brdr-tp">$10,500.</div>
+          <div class="mg-cell"></div>
+          <div class="mg-cell"></div>
+        </div>
+</div>
+
+<p class="mrgn-tp-md">In this example, she over-contributed. She exceeded her $6,5000 available contribution room for 2025 by $4,000.</p>
 
 </details>
 
