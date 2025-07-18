@@ -205,7 +205,6 @@ div.mg-cell.pr-0 {
 
 
 
-
   <!-- Button Trigger -->
   <button class="btn" popovertarget="bootstrapPopover" popovertargetaction="toggle">
     Click me
@@ -214,11 +213,14 @@ div.mg-cell.pr-0 {
 <br><br>
 
   <!-- Link??? Trigger -->
-  <a type="button" popovertarget="bootstrapPopover" popovertargetaction="toggle">
+  <a role="button" popovertarget="bootstrapPopover" popovertargetaction="toggle">
     Click me
   </a>
 
-
+<script>
+$("[data-toggle=popover]")
+  .popover({html:true})
+</script>
 
   <!-- Popover -->
   <div id="bootstrapPopover" popover>
