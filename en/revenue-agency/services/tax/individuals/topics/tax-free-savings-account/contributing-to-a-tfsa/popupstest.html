@@ -245,6 +245,17 @@ div.mg-cell.pr-0 {
 </style>
 
 <script>
+import {
+  computePosition,
+  flip,
+  shift,
+  offset
+} from "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.4/+esm";
+
+const popoverButtons = document.querySelectorAll(
+  "button[popovertarget]"
+);
+
 popoverButtons.forEach((button) => {
   let timeout = 0;
   button.addEventListener("mouseenter", () => {
