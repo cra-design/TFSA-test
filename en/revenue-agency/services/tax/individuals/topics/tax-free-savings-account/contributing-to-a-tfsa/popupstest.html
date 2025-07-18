@@ -203,6 +203,8 @@ div.mg-cell.pr-0 {
 
                         <div id="page-content">
 
+
+                            
   <!-- Popover -->
   <div id="bootstrapPopover" popover role="tooltip">
     <div class="popover-header">Fair market value (FMV)</div>
@@ -242,6 +244,33 @@ div.mg-cell.pr-0 {
 }
 </style>
 
+<script>
+popoverButtons.forEach((button) => {
+  let timeout = 0;
+  button.addEventListener("mouseenter", () => {
+    const target = button.getAttribute("popovertarget");
+    const popover = document.querySelector("#" + target);
+    // delay opening
+    timeout = setTimeout(() => {
+      popover.showPopover();
+      computePosition(button, popover, {
+        placement: "top",
+        middleware: [flip(), shift({ padding: 5 }), offset(6)]
+      }).then(({ x, y }) => {
+        Object.assign(popover.style, {
+          left: `${x}px`,
+          top: `${y}px`
+        });
+      });
+    }, 1500);
+  });
+
+  button.addEventListener("mouseleave", () => {
+    clearTimeout(timeout);
+    button.removeAttribute("style");
+  });
+});
+</script>
 
 <h5 class="h6" id="rrsp">Do not transfer from your RRSP </h5>
 <p>RRSP transfers count as income. If you transfer investments from your RRSP to your TFSA, you are considered to have withdrawn the investment from the RRSP at the   <button popovertarget="bootstrapPopover" popovertargetaction="toggle" class="text-like">fair market value (FMV)<span class="far fa-question-circle mrgn-lft-sm"></span></button>.  This can have serious tax consequences. The withdrawal counts as income and must be reported in your Income tax and benefit return for that year. You may claim the tax withheld on the withdrawal at line 43700 of your return. </p>
