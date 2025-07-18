@@ -213,12 +213,33 @@ div.mg-cell.pr-0 {
   </div>
 
 <style>
+  button[popovertarget].text-like {
+  border: 0;
+  background: none;
+  font: inherit;
+  padding: 0;
+  display: inline-block;
+  text-decoration-style: dashed;
+  text-decoration-line: underline;
+  text-decoration-color: #42a5f5;
+  text-underline-offset: 2px;
+  overflow: visible;
+  color: #1e88e5;
+
+  &:focus,
+  &:hover {
+    text-decoration-color: lightblue;
+    text-decoration-style: solid;
+  }
+}
+
 .text-like {
     anchor-name: --anchor-pop;
 }
 
 #bootstrapPopover {
     position-anchor: --anchor-pop;
+    margin; 0;
     position: absolute;
     top: anchor(--anchor-pop bottom);
     left: anchor(--anchor-pop right);
