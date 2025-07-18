@@ -203,44 +203,11 @@ div.mg-cell.pr-0 {
 
                         <div id="page-content">
 
-
-
-<script>
-$("[data-toggle=popover]")
-  .popover({html:true})
-</script>
-
   <!-- Popover -->
   <div id="bootstrapPopover" popover role="tooltip">
     <div class="popover-header">Fair market value (FMV)</div>
     <div class="popover-body"><p>Is generally considered to mean the highest price expressed in terms of money that can be obtained in an open and unrestricted market between informed and prudent parties, who are dealing at arm's length and under no compulsion to buy or sell.</p>
-    <p>For information on the valuation of securities of closely-held corporations, see <a href="/en/revenue-agency/services/forms-publications/publications/ic89-3.html">Information Circular IC89-3, Policy Statement on Business Equity Valuations</a>.</p></div>
-  </div>
-
-
-
-  <!-- Button Trigger -->
-  <button class="btn" popovertarget="bootstrapPopover" popovertargetaction="toggle">
-    Click me
-  </button>
-
-<br><br>
-
-  <!-- Link??? Trigger -->
-  <button popovertarget="bootstrapPopover" popovertargetaction="toggle" class="text-like">
-    Click me
-  </button>
-
-<script>
-$("[data-toggle=popover]")
-  .popover({html:true})
-</script>
-
-  <!-- Popover -->
-  <div id="bootstrapPopover" popover role="tooltip">
-    <div class="popover-header">Fair market value (FMV)</div>
-    <div class="popover-body"><p>Is generally considered to mean the highest price expressed in terms of money that can be obtained in an open and unrestricted market between informed and prudent parties, who are dealing at arm's length and under no compulsion to buy or sell.</p>
-    <p>For information on the valuation of securities of closely-held corporations, see <a href="/en/revenue-agency/services/forms-publications/publications/ic89-3.html">Information Circular IC89-3, Policy Statement on Business Equity Valuations</a>.</p></div>
+    <p>For information on the valuation of securities of closely-held corporations, see <a href="http://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic89-3.html" target="_blank">Information Circular IC89-3, Policy Statement on Business Equity Valuations</a>.</p></div>
   </div>
 
 <style>
@@ -270,6 +237,7 @@ $("[data-toggle=popover]")
 
 #bootstrapPopover {
     position-anchor: --anchor-pop;
+    position: absolute;
     bottom: anchor(top);
 }
 </style>
