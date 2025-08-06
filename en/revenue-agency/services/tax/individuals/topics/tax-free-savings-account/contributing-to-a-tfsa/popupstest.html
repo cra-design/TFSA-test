@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 
 <html class="no-js" dir="ltr" lang="en" xmlns="https://www.w3.org/1999/xhtml">
@@ -291,6 +288,11 @@ popoverButtons.forEach((button) => {
 <h5 class="h6" id="rrsp">Do not transfer from your RRSP </h5>
 <p>RRSP transfers count as income. If you transfer investments from your RRSP to your TFSA, you are considered to have withdrawn the investment from the RRSP at the <a class="wb-lbx" href="#fmv">fair market value (FMV)<span class="far fa-question-circle mrgn-lft-sm"></span></a>.  This can have serious tax consequences. The withdrawal counts as income and must be reported in your Income tax and benefit return for that year. You may claim the tax withheld on the withdrawal at line 43700 of your return. </p>
 
+<h3>WET overlay/modal with less opacity</h3>
+
+<h5 class="h6" id="rrsp2">Do not transfer from your RRSP </h5>
+<p>RRSP transfers count as income. If you transfer investments from your RRSP to your TFSA, you are considered to have withdrawn the investment from the RRSP at the <a class="wb-lbx lbx-modal" href="#fmv3">fair market value (FMV)<span class="far fa-question-circle mrgn-lft-sm"></span></a>.  This can have serious tax consequences. The withdrawal counts as income and must be reported in your Income tax and benefit return for that year. You may claim the tax withheld on the withdrawal at line 43700 of your return. </p>
+
 <h3>WET centered overlay with hacked size (default is 90% box size)</h3>
 
 <h5 class="h6" id="rrsp">Do not transfer from your RRSP </h5>
@@ -300,6 +302,19 @@ popoverButtons.forEach((button) => {
 
 <h5 class="h6" id="rrsp">Do not transfer from your RRSP </h5>
 <p>RRSP transfers count as income. If you transfer investments from your RRSP to your TFSA, you are considered to have withdrawn the investment from the RRSP at the <button popovertarget="bootstrapPopover" popovertargetaction="toggle" class="text-like">fair market value (FMV)<span class="far fa-question-circle mrgn-lft-sm"></span></button>.  This can have serious tax consequences. The withdrawal counts as income and must be reported in your Income tax and benefit return for that year. You may claim the tax withheld on the withdrawal at line 43700 of your return. </p>
+
+
+
+<section id="fmv3" class="mfp-hide modal-dialog modal-content overlay-def">
+            <header class="modal-header">
+                <h2 class="modal-title">Fair market value (FMV)</h2>
+            </header>
+            <div class="modal-body">
+          <p>Is generally considered to mean the highest price expressed in terms of money that can be obtained in an open and unrestricted market between informed and prudent parties, who are dealing at arm's length and under no compulsion to buy or sell.</p>
+          <p>For information on the valuation of securities of closely-held corporations, see <a href="/en/revenue-agency/services/forms-publications/publications/ic89-3.html">Information Circular IC89-3, Policy Statement on Business Equity Valuations</a>.</p>
+            </div>
+        </section>
+
 
 
 <section id="fmv" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -316,6 +331,11 @@ popoverButtons.forEach((button) => {
 .wb-popup-mid {
     max-height: max-content;
     width: 60%;
+}
+
+#rrsp2.mfp-bg {
+    opacity: .77;
+}
 </style>
 
 <section id="fmv2" class="wb-overlay modal-content overlay-def wb-popup-mid">
