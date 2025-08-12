@@ -995,5 +995,31 @@
 
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/méli-mélo/2024-09-kejimkujik.min.js" crossorigin="anonymous" integrity="sha384-38BdlPyAmaSTteadJsKBZ4GjgMVH8L4TsrGFWSKlvWoNQabupKEzx2jx5Zvel7MI"></script>
 
+<script>
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const choice = params.get('choice'); 
+  if (!choice) return;
+
+  function trySelect() {
+    const radio = document.querySelector(
+      `input[name="wb-fieldflowwb-auto-1wb-auto-18"][value="${choice}"]`
+    );
+    if (radio) {
+      radio.click(); // <-- This triggers click + change events
+      observer.disconnect();
+    }
+  }
+
+  trySelect(); // Try immediately
+
+  const observer = new MutationObserver(trySelect);
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
+	
 </body>
 </html>
